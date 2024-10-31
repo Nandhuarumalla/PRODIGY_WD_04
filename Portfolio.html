@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('recent-projects')">Recent Projects</a></li>
+                <li><a href="#" onclick ="showSection('certificates')">Certificates</a></li>
+                <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <h2>Hello, I'm Nandini </h2>
+        <p>I'm a Passinate Web Developer</p>
+        <a href="#" class="btn" onclick="showSection('about')">More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with experience in creating dynamic web applications...</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, etc.</p>
+    </section>
+
+    
+
+    <!-- Recent Projects Section -->
+    <section id="recent-projects" class="section">
+        <h2>Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Responsive Landing Page</h3>
+                <p>An interactive navigation menu that changes color or style when scrolled or when hovering over a menu item.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website </h3>
+                <p>it is simple and interactive website using html,css,javascript. </p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <p>Successfully completed a 8 weeks online cerficatied training on Web Development.</p>
+        <img src="certificate.jpg" alt="Cerficate image" style="width:100%;max-width:400px;">
+        <p>Successfully completed a 12 weeks online certified course on programming in java </p>
+        <img src="certificate1.jpg" alt="Certificate1 image" style="width:100%; max-width: 400px;">
+    </section>
+    <section id="hobbies" class="section">
+        <h2>Hobbies</h2>
+        <p>My hobbies are Drawing,Watching Movies,Reading books,cooking</p>
+        
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="https://example.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
